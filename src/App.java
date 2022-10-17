@@ -75,14 +75,11 @@ public class App {
                 System.out.println("-------------------Final order-----------------");
                 vm.finaliseOrder();
                 vm.display();
-                break;
             } else {
                 System.out.println("Invalid Operation Performed!");
             }
-            System.out.println("Do you wish to continue or proceed to pay amount?(y/n)");
-            choice = sc.nextLine();
 
-        } while (choice.charAt(0) == 'y');
+        } while (opChoice !=3);
 
     }
 
